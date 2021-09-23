@@ -6,9 +6,9 @@
 </head>
 
 <body>
-<% @posts.each do |p| %>
-    <p>Title: <%= p.title %>, <%= p.author_name %>, <%= p.category %></p>
-<% end %>
+    <% @posts.each do |p| %>
+        <p><%= p.title %>, <%= p.author_name %>, <%= p.category %></p>
+    <% end %>
 </body>
 
 </html>  
