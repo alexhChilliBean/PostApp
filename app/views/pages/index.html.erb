@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1 class="title"> Blog <h1>
+</head>
+
+<body>
+<% @posts.each do |p| %>
+    <p>Title: <%= p.title %>, <%= p.author_name %>, <%= p.category %></p>
+<% end %>
+</body>
+
+</html>  

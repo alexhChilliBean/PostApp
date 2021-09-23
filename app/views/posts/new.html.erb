@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+    <%= form_for @post do |p|%>
+        <p>
+        <%=p.label :title%>
+        <%=p.text_field :title, required: true%>
+        </p>
+        <p>
+        <%=p.label :content%>
+        <%=p.text_area :content, required: true%>
+        </p>
+        <p>
+        <%=p.label :category%>
+        <%=p.select :category, ["Lifestyle", "Music","Food","Fitness"], required: true%>
+        <p>
+        <%=p.label :author_name%>
+        <%=p.text_field :author_name, required: true%>
+        </p>
+        <p>
+        <%=p.submit "Post"%>
+        </p>
+
+    <% end %>
+</html>
