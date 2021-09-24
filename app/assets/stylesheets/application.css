@@ -14,52 +14,72 @@
  *= require_self
  */
 body {
-        background-color: #F0F6F9;
+        background-color: #FFFBF0;
         font-family: 'Roboto', sans-serif;
         
 }
 
-ul {
+ul {    
         list-style-type: none;
         margin: 0;
-        padding-block: 30px;
-        background-color: #5A89C5;
+        padding: 0;
+        overflow: hidden;
+        background-color: #c8d8e4;
 }
 
-li  {
+
+li  {   float: left;
+}
+
+li a{   
         font-size: 25pt;
         font-weight: 70;
-        padding: 8px;
-        display: inline;
-}
-
-li a{
-        color: #F7F9FA;
+        display: block;
+        color: #2d2d2d;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
 }
 
 li a:hover {
-    background-color: #38567B;
+    background-color: #BFCDD7;
 }
 
 input[type=text] {
     margin-left: 30%;
     width: 40%;
     text-align: center;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 12px;
+
 }
 
 textarea {
     margin-left: 10%;
     width: 80%;
-    height: 150px;
-    resize: inherit;
+    padding: 300px 12px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 12px;
 }
 
 h4{
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form_title {
+    font-size: 25pt;
+        font-weight: 70;
+        display: block;
+        color: #2d2d2d;
+        
 }
 
 .form_button {
@@ -67,11 +87,37 @@ h4{
     width: 20%;
     height: 40%;
     text-align: center;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    padding: 14px 16px;
+    border-radius: 12px;
+    
+
 }
 
 .title  {
+    float: right;
+    font-size: 40pt;
+    font-weight: 70;
+    display: block;
+    color: #2d2d2d;
+    background-color: #BFCDD7;
     text-align: center;
-    text-decoration: underline;
-    font-size: 50pt;
-    font-weight: 400;
+    padding: 14px 16px;
+    text-decoration: none
+}
+
+.post_index {
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 20pt;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 70;
+}
+
+.post_header {
+    margin-top: 5%;
+    margin-left: 10%;
+    text-align: left;
+
 }

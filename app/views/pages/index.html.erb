@@ -2,12 +2,14 @@
 <html>
 
 <head>
-    <h1 class="title"> Blog <h1>
+    
 </head>
 
 <body>
+    </br>
+    <h4 class="post_header">Featured posts:</h4>
     <% @posts.each do |p| %>
-        <p><%= p.title %>, <%= p.author_name %>, <%= p.category %></p>
+        <p class="post_index"><%= p.category %>: <%= p.title %>, <%= p.author_name %></p>
     <% end %>
 </body>
 
