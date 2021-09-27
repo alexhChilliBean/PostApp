@@ -3,33 +3,33 @@
 
     <%= form_for @post do |p|%>
 
-        <p>
-        <h4 class="form_title"><%=p.label :title%></h4>
-        <%=p.text_field :title, required: true%>
-        </p>
+        <div>
+            <h4 class="form_title"><%=p.label :title%></h4>
+            <%=p.text_field :title, required: true%>
+        </div>
         </br>
 
-          <p>
-       <h4 class="form_title"> <%=p.label :category%></h4>
-        <%=p.select :category, ["Lifestyle", "Music","Food","Fitness"], {}, {required: true, class: "form_button"}%>
-        </p>
+        <div>
+            <h4 class="form_title"> <%=p.label :category%></h4>
+            <%=p.select :category, ["Lifestyle", "Music","Food","Fitness"], {}, {required: true, class: "form_button"}%>
+        </div>
         </br>
 
-        <p>
-        <h4 class="form_title"><%=p.label :author_name%></h4>
-        <%=p.text_field :author_name, required: true%>
-        </p>
+        <div>
+            <h4 class="form_title"><%=p.label :author_name%></h4>
+            <%=p.text_field :author_name, required: true%>
+        </div>
         </br>
 
-         <p>
-        <h4 class="form_title"><%=p.label :content%></h4>
-        <%=p.text_area :content, required: true%>
-        </p>
+         <div>
+            <h4 class="form_title"><%=p.label :content%></h4>
+            <%=p.text_area :content, required: true%>
+        </div>
         </br>
 
-        <p>
-        <%=p.submit "Post", class: "form_button"%>
-        </p>
+        <div>
+            <%=p.submit "Post", class: "form_button"%>
+        </div>
         </br>
 
     <% end %>
