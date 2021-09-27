@@ -18,6 +18,11 @@ class PostsController < ApplicationController
     end
 
     def show
+        @post = Post.find(params[:id])
+        :category
+        :title
+        :author
+        :content
     end
     
 end
