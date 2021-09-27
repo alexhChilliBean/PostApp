@@ -9,7 +9,7 @@
     </br>
     <h4 class="post_header">Featured posts:</h4>
     <% @posts.each do |p| %>
-        <p class="post_index"><%= p.category %>: <%= p.title %> , <%= p.author_name %>, <%= button_to "show", "posts/show", {:category => p.category, :title => p.title, :author => p.author_name, :content => p.content} %></p>
+        <p class="post_index"><%= p.category %>: <%= p.title %> , <%= p.author_name %>, <%= link_to "show", post_path(p) %></p>
     <% end %>
 </body>
 

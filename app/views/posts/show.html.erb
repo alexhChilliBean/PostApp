@@ -2,9 +2,17 @@
 
 <html>
     <head>
-
-        <p><%= :title %> </p>
-    </head>
+        <h4 class = "show_category"> <%= @post.category%></h4>
+        </head>
+    
+    <body>
+        <h3 class = "show_title"> <%= @post.title %> </h3>
+        <h4 class = "show_author"> by <%= @post.author_name%></h4>
+        </br>
+        </br>
+        <p class = "show_content"> <%= @post.content %></p>
+    </body>
+    
 
 
 </html>
