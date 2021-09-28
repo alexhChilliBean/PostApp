@@ -1,0 +1,62 @@
+/* CSS for show.html */
+
+.show_title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 350;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.show_content {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 350;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.show_category {
+    font-style: italic;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.show_author {
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 350;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dropbtn {
+    float: right;
+    background-color:#DFDCD2;
+    border: none;
+    font-size: 16px;    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DFDCD2;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}

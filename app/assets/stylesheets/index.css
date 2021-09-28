@@ -1,0 +1,29 @@
+ /* CSS for index.html */
+
+ .post_fields {
+    margin-top: 5%;
+    margin-left: 15%;
+    font-size: 20pt;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 70;
+}
+
+.post_header {
+    margin-top: 5%;
+    margin-left: 10%;
+    text-align: left;
+
+}
+
+.show_button {
+        font-weight: 400;
+        margin-left: 5%;
+        color: #2d2d2d;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+}
+
+.show_button:hover {
+    background-color: #DFDCD2;
+}
