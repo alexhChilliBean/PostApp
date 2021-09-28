@@ -1,0 +1,123 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+        background-color: #FFFBF0;
+        font-family: 'Roboto', sans-serif;
+        
+}
+
+ul {    
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #c8d8e4;
+}
+
+
+li  {   float: left;
+}
+
+li a{   
+        font-size: 25pt;
+        font-weight: 70;
+        display: block;
+        color: #2d2d2d;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+}
+
+li a:hover {
+    background-color: #BFCDD7;
+}
+
+input[type=text] {
+    margin-left: 30%;
+    width: 40%;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 12px;
+
+}
+
+textarea {
+    margin-left: 10%;
+    width: 80%;
+    padding: 300px 12px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 12px;
+}
+
+h4{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form_title {
+    font-size: 25pt;
+        font-weight: 70;
+        display: block;
+        color: #2d2d2d;
+        
+}
+
+.form_button {
+    margin-left: 40%;
+    width: 20%;
+    height: 40%;
+    text-align: center;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    padding: 14px 16px;
+    border-radius: 12px;
+    
+
+}
+
+.title  {
+    float: right;
+    font-size: 40pt;
+    font-weight: 70;
+    display: block;
+    color: #2d2d2d;
+    background-color: #BFCDD7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none
+}
+
+.post_index {
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 20pt;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 70;
+}
+
+.post_header {
+    margin-top: 5%;
+    margin-left: 10%;
+    text-align: left;
+
+}
