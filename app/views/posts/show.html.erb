@@ -1,26 +1,14 @@
-<!DOCTYPE html>
 
-<html>
-    <head>
     <%= stylesheet_link_tag 'show' %>
-        <h4 class = "show_category"> <%= @post.category%></h4>
-        
-        </head>
-
-    <div class="dropdown">
+     <h4 class = "show_category"> <%= @post.category%></h4>
+<div class="dropdown">
         <button class="dropbtn">Options</button>
         <div class = "dropdown-content">
             <%= link_to "Delete", @post, method: :delete, class: "delete_button" %>
         </div>
-    </div>
-    <body>
-        <h3 class = "show_title"> <%= @post.title %> </h3>
-        <h4 class = "show_author"> by <%= @post.author_name%></h4>
-        </br>
-        </br>
-        <p class = "show_content"> <%= @post.content %></p>
-    </body>
-    
-
-
-</html>
+</div>
+    <h3 class = "show_title"> <%= @post.title %> </h3>
+    <h4 class = "show_author"> by <%= @post.author_name%></h4>
+    </br>
+    </br>
+    <div class = "show_content"> <%= @post.content %></div>
