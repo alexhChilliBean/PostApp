@@ -13,24 +13,20 @@
  *= require_tree .
  *= require_self
  */
-
-
-
-
- /* CSS for index.html */
+/* CSS for Application.html */
 
 body {
-        background-color: #FFFBF0;
-        font-family: 'Roboto', sans-serif;
-        
+    background-color: #FFFBF0;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 ul {    
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #c8d8e4;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #c8d8e4;
 }
 
 
@@ -38,20 +34,18 @@ li  {   float: left;
 }
 
 li a{   
-        font-size: 25pt;
-        font-weight: 70;
-        display: block;
-        color: #2d2d2d;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
+    font-size: 25pt;
+    font-weight: 70;
+    display: block;
+    color: #2d2d2d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 li a:hover {
-    background-color: #BFCDD7;
+background-color: #BFCDD7;
 }
-
-
 
 h4{
     text-align: center;
@@ -59,6 +53,17 @@ h4{
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+ /* CSS for index.html */
 
 .post_fields {
     margin-top: 5%;
@@ -74,6 +79,25 @@ h4{
     text-align: left;
 
 }
+
+.show_button {
+        font-weight: 400;
+        margin-left: 5%;
+        color: #2d2d2d;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+}
+
+.show_button:hover {
+    background-color: #DFDCD2;
+}
+
+
+
+
+
+
 
 
 
@@ -142,6 +166,7 @@ textarea {
 
 
 
+
 /* CSS for show.html */
 
 .show_title {
@@ -173,4 +198,18 @@ textarea {
     font-size: 20px;
     font-weight: 350;
     font-family: 'Open Sans', sans-serif;
+}
+
+.delete_button {
+    font-weight: 70;
+    margin-right: 5%;
+    float: right;
+    color: #2d2d2d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.delete_button:hover {
+    background-color: #DFDCD2;
 }

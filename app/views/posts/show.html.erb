@@ -3,6 +3,7 @@
 <html>
     <head>
         <h4 class = "show_category"> <%= @post.category%></h4>
+        <%= link_to "Delete", @post, method: :delete, class: "delete_button" %>
         </head>
     
     <body>
