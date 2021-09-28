@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 <body>
     </br>
     <h4 class="post_header">Featured posts:</h4>
-    <% @posts.each do |p| %>
-        <div class="post_fields"><%= p.category %>: <%= p.title %> , <%= p.author_name %>, <%= link_to "show", post_path(p) %></div>
+    <% @posts.each do |post| %>
+        <div class="post_fields"><%= post.category %>: <%= post.title %> , <%= post.author_name %>, <%= link_to "show", post_path(post) %></div>
     <% end %>
 </body>
-
 </html>  
