@@ -20,27 +20,14 @@ body {
     font-family: 'Roboto', sans-serif;
     
 }
-ul {    
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #c8d8e4;
-}
-li  {   float: left;
-}
-li a{
-    font-size: 25pt;
-    font-weight: 70;
-    display: block;
-    color: #2d2d2d;
-    text-align: center;
-    padding: 14px 16px;
+
+.link {
     text-decoration: none;
+    color: grey;
 }
 
-li a:hover {
-background-color: #BFCDD7;
+.link:hover{
+    color:black;
 }
 
 h4{
