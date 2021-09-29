@@ -27,3 +27,13 @@
 .show_button:hover {
     background-color: #DFDCD2;
 }
+
+.link_to {
+    float: right;
+    text-decoration: none;
+    color: grey;
+}
+
+.link_to:hover{
+    color:black;
+}

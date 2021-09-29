@@ -5,5 +5,5 @@
 </br>
 <h4 class="post_header">Featured posts:</h4>
 <% @posts.each do |post| %>
-    <div class="post_fields"><%= post.category %>: <%= post.title %> , <%= post.author_name %>, <%= link_to "show", post_path(post) %></div>
+    <div class="post_fields"><%= post.category %>: <%= post.title %> , <%= post.author_name %> <%= link_to "show", post_path(post), class:"link_to" %></div>
 <% end %>
