@@ -1,5 +1,6 @@
 
     <%= stylesheet_link_tag 'show' %>
+</br>
 <div class="container">
     <div class = "row">
         <div class="col-sm-2 d-inline-block align-top">
@@ -11,24 +12,19 @@
         </div>
         <div class="col-sm-2 ms-auto text-center">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Options
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <%= link_to "Delete", @post, method: :delete, class: "dropdown-item" %>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><%= link_to "Delete", @post, method: :delete, class: "dropdown-item" %></li>
+                    <li><a class="dropdown-item" href="#">Update</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
             </div>
         </div>
     </div>
- </div>   
-    
-<!--<div class="dropdown">
-        <button class="dropbtn">Options</button>
-        <div class = "dropdown-content">
-            <%= link_to "Delete", @post, method: :delete, class: "delete_button" %>
-        </div>-->
-</div>
+ </div> 
+    </br>
+    </br>
     </br>
     <div class = "show_content"> <%= @post.content %></div>

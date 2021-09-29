@@ -2,7 +2,7 @@
 
 .show_title {
     text-align: center;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 70;
     font-family: 'Open Sans', sans-serif;
 }
@@ -35,5 +35,9 @@
     background-color: #FFFBF0;
     color: black;
     border: none;
+}
+
+.btn:hover{
+    background-color: grey;
 }
 
