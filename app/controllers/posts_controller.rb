@@ -22,7 +22,7 @@ class PostsController < ApplicationController
             flash[:notice] ="Post deleted"
             redirect_to root_path
         else
-            flash[:notice]="Failed to delete post"
+            flash[:error]="Failed to delete post"
             render
         end
     end
