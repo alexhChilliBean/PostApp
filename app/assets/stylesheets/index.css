@@ -37,3 +37,20 @@
 .link_to:hover{
     color:black;
 }
+
+table {
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 50%;
+    font-size: 25px;
+    text-align: center;
+}
+
+th {
+   
+}
+
+td {
+    text-align: center;
+    padding: 14pt 16pt;
+}
