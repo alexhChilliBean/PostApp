@@ -1,0 +1,57 @@
+
+/* CSS for new.html */
+
+input[type=text] {
+    margin-left: 30%;
+    width: 40%;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 12px;
+
+}
+
+textarea {
+    margin-left: 10%;
+    width: 80%;
+    padding: 300px 12px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 12px;
+}
+.form_title {
+    font-size: 25pt;
+        font-weight: 70;
+        display: block;
+        color: #2d2d2d;
+        
+}
+
+.form_button {
+    margin-left: 40%;
+    width: 20%;
+    height: 40%;
+    text-align: center;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15pt;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.title  {
+    float: right;
+    font-size: 40pt;
+    font-weight: 70;
+    display: block;
+    color: #2d2d2d;
+    background-color: #BFCDD7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none
+}
+

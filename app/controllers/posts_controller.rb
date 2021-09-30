@@ -8,12 +8,23 @@ class PostsController < ApplicationController
         if @post.save
             redirect_to root_path
         else
-            render 'end'
+            @errors = @post.errors
         end 
     end
 
     def show
         @post = Post.find(params[:id])
+    end
+
+    def destroy
+        @post = Post.find(params[:id])
+        if @post.destroy
+            flash[:notice] ="Post deleted"
+            redirect_to root_path
+        else
+            flash[:error]="Failed to delete post"
+            render
+        end
     end
 
     private

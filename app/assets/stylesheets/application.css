@@ -13,132 +13,26 @@
  *= require_tree .
  *= require_self
  */
-
-
-
-
- /* CSS for index.html */
+/* CSS for Application.html */
 
 body {
-        background-color: #FFFBF0;
-        font-family: 'Roboto', sans-serif;
-        
+    background-color: #FFFBF0;
+    font-family: 'Roboto', sans-serif;
+    
 }
-ul {    
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #c8d8e4;
+
+.link {
+    text-decoration: none;
+    color: grey;
 }
-li  {   float: left;
+
+.link:hover{
+    color:black;
 }
-li a{   
-        font-size: 25pt;
-        font-weight: 70;
-        display: block;
-        color: #2d2d2d;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-}
-li a:hover {
-    background-color: #BFCDD7;
-}
+
 h4{
     text-align: center;
     font-size: 30px;
     font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-}
-.post_fields {
-    margin-top: 5%;
-    margin-left: 15%;
-    font-size: 20pt;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 70;
-}
-.post_header {
-    margin-top: 5%;
-    margin-left: 10%;
-    text-align: left;
-}
-/* CSS for new.html */
-
-input[type=text] {
-    margin-left: 30%;
-    width: 40%;
-    text-align: center;
-    padding: 12px 20px;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    border: none;
-    border-radius: 12px;
-}
-textarea {
-    margin-left: 10%;
-    width: 80%;
-    padding: 300px 12px;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    border: none;
-    border-radius: 12px;
-}
-.form_title {
-    font-size: 25pt;
-        font-weight: 70;
-        display: block;
-        color: #2d2d2d;
-        
-}
-.form_button {
-    margin-left: 40%;
-    width: 20%;
-    height: 40%;
-    text-align: center;
-    border: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15pt;
-    padding: 14px 16px;
-    border-radius: 12px;
-    background-color: white;
-}
-.title  {
-    float: right;
-    font-size: 40pt;
-    font-weight: 70;
-    display: block;
-    color: #2d2d2d;
-    background-color: #BFCDD7;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none
-}
-/* CSS for show.html */
-.show_title {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 350;
-    font-family: 'Open Sans', sans-serif;
-}
-.show_content {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 350;
-    font-family: 'Open Sans', sans-serif;
-}
-.show_category {
-    font-style: italic;
-    text-align: left;
-    margin-left: 5%;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-}
-.show_author {
-    font-style: italic;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 350;
     font-family: 'Open Sans', sans-serif;
 }

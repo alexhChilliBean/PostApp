@@ -1,6 +1,28 @@
-    <h4 class = "show_category"> <%= @post.category%></h4>
-    <h3 class = "show_title"> <%= @post.title %> </h3>
-    <h4 class = "show_author"> by <%= @post.author_name%></h4>
+
+    <%= stylesheet_link_tag 'show' %>
+</br>
+<div class="container">
+    <div class = "row">
+        <div class="col-sm-2 d-inline-block align-top">
+             <div class = "show_category"> Category: <%= @post.category%></div>
+        </div>
+        <div class="col-sm-8 text-center"> 
+            <h3 class = "show_title"> <%= @post.title %> </h3>
+            <h4 class = "show_author"> by <%= @post.author_name%></h4>
+        </div>
+        <div class="col-sm-2 ms-auto text-center">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Options
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><%= link_to "Delete", @post, method: :delete, class: "dropdown-item" %></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ </div> 
+    </br>
     </br>
     </br>
     <div class = "show_content"> <%= @post.content %></div>
