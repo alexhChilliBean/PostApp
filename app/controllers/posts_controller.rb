@@ -8,7 +8,7 @@ class PostsController < ApplicationController
         if @post.save
             redirect_to root_path
         else
-            @errors = @post.errors
+            flash[:error] = @post.errors.full_messages
         end 
     end
 
@@ -33,11 +33,13 @@ class PostsController < ApplicationController
 
     def update
         @post = Post.find(params[:id])
+        return render 'edit', error:["Post does not exist"] unless @post
+
         if @post.update(post_params)
             flash[:notice] = "Post Updated"
             redirect_to post_path(@post)
         else
-            flash[:error] = "Post does not exist"
+            flash[:error] = @post.error.full_messages
             render 'edit'
         end
     end
