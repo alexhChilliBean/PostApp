@@ -1,0 +1,15 @@
+<%= form_for @comment do |comment|%>
+    <div>
+        <h4 class="form_title"><%=comment.label :user%></h4>
+        <%=comment.text_field :user, required: true%>
+    </div>
+    </br>
+    <div>
+        <h4 class="form_title"><%=comment.label :content%></h4>
+        <%=comment.text_field :content%>
+    </div>
+    </br>
+        <%=comment.submit "comment", class: "form_button"%>
+    </div>
+    </br>
+<% end %>
