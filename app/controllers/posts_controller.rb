@@ -37,7 +37,7 @@ class PostsController < ApplicationController
             flash[:notice] = "Post Updated"
             redirect_to post_path(@post)
         else
-            flash[:error] = "Article was not Updated"
+            flash[:error] = "Post does not exist"
             render 'edit'
         end
     end
