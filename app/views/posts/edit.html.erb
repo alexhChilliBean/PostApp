@@ -1,0 +1,30 @@
+
+<div class="container">
+    <h1>Edit Article</h1>
+</div>
+<%= form_for @post do |post|%>
+    <div>
+        <h4 class="form_title"><%=post.label :title%></h4>
+        <%=post.text_field :title, required: true%>
+    </div>
+    </br>
+    <div>
+        <h4 class="form_title"> <%=post.label :category%></h4>
+        <%=post.select :category, ["Lifestyle", "Music","Food","Fitness"], {}, {required: true, class: "form_button"}%>
+    </div>
+    </br>
+    <div>
+        <h4 class="form_title"><%=post.label :author_name%></h4>
+        <%=post.text_field :author_name, required: true%>
+    </div>
+    </br>
+    <div>
+        <h4 class="form_title"><%=post.label :content%></h4>
+        <%=post.text_area :content, required: true%>
+    </div>
+    </br>
+    <div>
+        <%=post.submit "Update", class: "form_button"%>
+    </div>
+    </br>
+<% end %>
