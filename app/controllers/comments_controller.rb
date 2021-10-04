@@ -10,9 +10,11 @@ class CommentsController < ApplicationController
     def create
         @comment = Comment.new(comment_params)
         if @comment.save
-            redirect_to "posts#show"
+            flash[:success] = "Comment Successfully Added"
+            return redirect_to post_path("#{comment_params[:post_id]}")
         else
             flash[:error] = @comment.errors.full_messages
+            render 'new'
         end 
     end
 

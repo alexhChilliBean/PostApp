@@ -51,11 +51,28 @@
     text-decoration: underline black 1px;
 }
 
-.tiny {
+.comment_list {
+    
+    text-align: left;
+    margin-left: 10pt;
+    list-style-type: none;
+    
+}
+
+li {
+    text-align: left;
+    margin-left: 10pt;
+    padding-block: 5pt;
+    list-style-type: none;
+}
+
+.name {
+    text-align: left;
     margin-left: 10pt;
     font-size: 10pt;
 }
 
-ul {
-    list-style-type: none;
+.comment {
+    text-align: left;
+    margin-left: 10pt;
 }

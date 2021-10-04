@@ -31,10 +31,10 @@
 
 <div class="container">
     <div class="comment_title">Comments</div>
-    <ul>
+    <ul class="comment_list">
         <% @comments.each do |comment|%>
-        <li><%= comment.content %></li>
-        <li class="tiny">-<%= comment.name%></li>
+        <li class="comment"><%= comment.content %></li>
+        <li class="name">-<%= comment.name%></li>
     </ul>
     <%end %>
 </div>
