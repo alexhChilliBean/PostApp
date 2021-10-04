@@ -1,7 +1,7 @@
 <%= form_for @comment do |comment|%>
     <div>
-        <h4 class="form_title"><%=comment.label :user%></h4>
-        <%=comment.text_field :user, required: true%>
+        <h4 class="form_title"><%=comment.label :name%></h4>
+        <%=comment.text_field :name, required: true%>
     </div>
     </br>
     <div>
@@ -10,6 +10,7 @@
     </div>
     </br>
         <%=comment.submit "comment", class: "form_button"%>
+        <%= comment.hidden_field :post_id, value: "#{params[:post_id]}" %>
     </div>
     </br>
 <% end %>

@@ -5,4 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-c1 = Comment.create(content: "This blog is great", name: "Steve", post_id: 1)
+c1 = Comment.create(content: "This blog is cool", name: "Steve", post_id: 2)
