@@ -18,7 +18,7 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li><%= link_to "Delete", @post, method: :delete, class: "dropdown-item" %></li>
                     <li><%= link_to "Edit", edit_post_path(@post), class: "dropdown-item"%></li>
-                    <li><%= link_to "Comment", post_comments_path(@post), class: "dropdown-item"%></li>
+                    <li><%= link_to "Comment", new_comment_path(@post), class: "dropdown-item"%></li>
                 </ul>
             </div>
         </div>
@@ -31,4 +31,8 @@
 
 <p>
     <h4>Comments</h4>
+<% @comments.each do |comment|%>
+    <%= comment.content %>
+<%end %>
+
 </p>

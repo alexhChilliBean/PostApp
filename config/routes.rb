@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#index'
 
-  resources :posts do
-    resources :comments, only: [:create]
-  end
+  resources :posts, :comments
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
