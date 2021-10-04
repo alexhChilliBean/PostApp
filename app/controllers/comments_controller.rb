@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
     end
 
     def create
-        @comment = Comment.new(post_params)
+        @comment = Comment.new(comment_params)
         if @comment.save
             redirect_to "posts#show"
         else
