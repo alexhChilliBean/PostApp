@@ -8,6 +8,7 @@
 }
 
 .show_content {
+    padding-block: 12pt;
     text-align: center;
     font-size: 20px;
     font-weight: 350;
@@ -41,3 +42,11 @@
     background-color: grey;
 }
 
+.comment_title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20pt;
+    text-align: left;
+    padding-block: 12px;
+    text-decoration: underline black 1px;
+}
