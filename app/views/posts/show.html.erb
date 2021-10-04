@@ -33,6 +33,7 @@
     <div class="comment_title">Comments</div>
     <ul>
         <% @comments.each do |comment|%>
-        <li><%= comment.name %></li>
+        <li><%= comment.content %>,<%= comment.name%></li>
+    </ul>
     <%end %>
 </div>
