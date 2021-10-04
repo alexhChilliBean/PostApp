@@ -1,6 +1,7 @@
-<head>
-    <%= stylesheet_link_tag 'new' %>
-</head>
+
+<div class="container">
+    <h1>Edit Article</h1>
+</div>
 <%= form_for @post do |post|%>
     <div>
         <h4 class="form_title"><%=post.label :title%></h4>
@@ -23,8 +24,7 @@
     </div>
     </br>
     <div>
-        <%=post.submit "post", class: "form_button"%>
+        <%=post.submit "Update", class: "form_button"%>
     </div>
     </br>
 <% end %>
-

@@ -8,7 +8,7 @@ class PostsController < ApplicationController
         if @post.save
             redirect_to root_path
         else
-            @errors = @post.errors
+            flash[:error] = @post.errors.full_messages
         end 
     end
 
@@ -24,6 +24,21 @@ class PostsController < ApplicationController
         else
             flash[:error]="Failed to delete post"
             render
+        end
+    end
+
+    def edit
+        @post = Post.find(params[:id])
+    end
+
+    def update
+        @post = Post.find(params[:id])
+        if @post.update(post_params)
+            flash[:notice] = "Post Updated"
+            redirect_to post_path(@post)
+        else
+            flash[:error] = @post.errors.full_messages
+            redirect_to edit_post_url(@post)
         end
     end
 
