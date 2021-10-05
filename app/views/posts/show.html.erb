@@ -2,7 +2,7 @@
     <%= stylesheet_link_tag 'show' %>
 </br>
 
-<div class="container">
+<div class="head container">
     <div class = "row">
         <div class="col-sm-2 d-inline-block align-top">
              <div class = "show_category"> Category: <%= @post.category%></div>
@@ -35,7 +35,7 @@
 </div>
 
 <section >
-  <div class="container my-5 py-5 text-dark">
+  <div class="container my-5 py-5 text-dark" id="comment_box">
     <div class="row d-flex justify-content-center">
       <div class="col-md-12 col-lg-10 col-xl-8">
         <div class="d-flex justify-content-between align-items-center mb-4">
@@ -44,11 +44,11 @@
               <h6 class="comment_button text-dark fw-bold small mb-0 me-1" id="switch">Show Comments</h6>
               <div class="form-check form-switch">
                 <input
-                  class="form-check-input"
-                  type="checkbox"
-                  onclick="myFunction()"
-                  id="flexSwitchCheckChecked"
-                  checked
+                    class="form-check-input"
+                    type="checkbox"
+                    onclick="myFunction()"
+                    id="flexSwitchCheckChecked"
+                    checked
                 />
                 <label class="form-check-label" for="flexSwitchCheckChecked"></label>
               </div>

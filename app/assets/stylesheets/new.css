@@ -1,5 +1,8 @@
 
 /* CSS for new.html */
+body {
+    background-color: #EDF4FF;
+}
 
 input[type=text] {
     margin-left: 30%;
