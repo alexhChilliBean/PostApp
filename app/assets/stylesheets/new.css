@@ -8,7 +8,7 @@ input[type=text] {
     padding: 12px 20px;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-    border: none;
+    border: 1px solid black;
     border-radius: 12px;
 
 }
@@ -19,7 +19,7 @@ textarea {
     padding: 300px 12px;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-    border: none;
+    border: 1px solid black;
     border-radius: 12px;
 }
 .form_title {
@@ -35,7 +35,7 @@ textarea {
     width: 20%;
     height: 40%;
     text-align: center;
-    border: none;
+    border: 1px solid black;
     font-family: 'Open Sans', sans-serif;
     font-size: 15pt;
     padding: 14px 16px;
