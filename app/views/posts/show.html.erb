@@ -1,7 +1,7 @@
 
     <%= stylesheet_link_tag 'show' %>
 </br>
-<div class="container">
+<div class="head container">
     <div class = "row">
         <div class="col-sm-2 d-inline-block align-top">
              <div class = "show_category"> Category: <%= @post.category%></div>
@@ -18,12 +18,81 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li><%= link_to "Delete", @post, method: :delete, class: "dropdown-item" %></li>
                     <li><%= link_to "Edit", edit_post_path(@post), class: "dropdown-item"%></li>
+                    <li><%= link_to "Comment", new_post_comment_path(@post), class: "dropdown-item"%></li>
                 </ul>
             </div>
         </div>
     </div>
  </div> 
-    </br>
-    </br>
-    </br>
-    <div class = "show_content"> <%= @post.content %></div>
+</br>
+</br>
+</br>
+<div class="row">
+    <div class=col-3></div>
+    <div class = "show_content col-sm-6 text-justify"> <%= @post.content %></div>
+    <div class=col-3></div>
+</div>
+
+<section >
+  <div class="container my-5 py-5 text-dark" id="comment_box">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-12 col-lg-10 col-xl-8">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div class="card">
+            <div class="card-body p-2 d-flex align-items-center">
+              <h6 class="comment_button text-dark fw-bold small mb-0 me-1" id="switch">Show Comments</h6>
+              <div class="form-check form-switch">
+                <input
+                    class="form-check-input"
+                    type="checkbox"
+                    onclick="myFunction()"
+                    id="flexSwitchCheckChecked"
+                    checked
+                />
+                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+  <div id="comments">
+    <% @comments.each do |comment| %>
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="d-flex flex-start">
+            
+                <div class="w-100">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h6 class="text-muted fw-bold mb-0">
+                        <%=comment.name%>
+                        <span class="text-dark ms-2"><%= comment.content %></span>
+                    </h6>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                    <p class="small mb-0" style="color: #aaa;">
+                    </p>
+                    <div class="d-flex flex-row">
+                        <i class="fas fa-star text-warning me-2"></i>
+                        <i class="far fa-check-circle" style="color: #aaa;"></i>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <%end%>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("comments");
+    if (x.style.display === "none"){
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>

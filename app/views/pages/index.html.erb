@@ -1,21 +1,22 @@
 
 <%= stylesheet_link_tag "index"%>
 <div class="container">
-    <h4 class="post_header">Featured posts:</h4>
-    <table>
+    <div class="row">
+        <h4 class="post_header ms-auto">Featured posts:</h4>
+    </div>
+    <table class="table table-primary table-striped">
         <tr>
         <th>Category</th>
         <th>Title</th>
         <th>Author</th>
         <th></th>
         </tr>
-    
         <% @posts.each do |post| %>
         <tr>
         <td><%= post.category %></td>
         <td><%= post.title%></td>
         <td><%= post.author_name %></td> 
-        <td><%= link_to "View Posts", post_path(post), class:"link_to" %></td>
+        <td><%= link_to "View Post", post_path(post), class:"link_to" %></td>
         </tr>
         <% end %>
     </table>

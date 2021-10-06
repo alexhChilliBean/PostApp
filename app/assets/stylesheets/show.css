@@ -8,7 +8,7 @@
 }
 
 .show_content {
-    text-align: center;
+    padding-block: 12pt;
     font-size: 20px;
     font-weight: 350;
     font-family: 'Open Sans', sans-serif;
@@ -32,12 +32,50 @@
 }
 
 .btn {
-    background-color: #FFFBF0;
+    background-color: #EDF4FF;
     color: black;
     border: none;
 }
 
 .btn:hover{
-    background-color: grey;
+    background-color: #CFE2FF
 }
 
+.comment_title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20pt;
+    text-align: left;
+    padding-block: 12px;
+    text-decoration: underline black 1px;
+}
+
+.comment_list {
+    
+    text-align: left;
+    margin-left: 10pt;
+    list-style-type: none;
+    
+}
+
+li {
+    text-align: left;
+    margin-left: 10pt;
+    padding-block: 5pt;
+    list-style-type: none;
+}
+
+.name {
+    text-align: left;
+    margin-left: 10pt;
+    font-size: 10pt;
+}
+
+.comment {
+    text-align: left;
+    margin-left: 10pt;
+}
+
+.head {
+    background-color: #EDF4FF;
+}

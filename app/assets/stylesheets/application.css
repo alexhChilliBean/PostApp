@@ -16,7 +16,7 @@
 /* CSS for Application.html */
 
 body {
-    background-color: #FFFBF0;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
     
 }
@@ -35,4 +35,8 @@ h4{
     font-size: 30px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    border-bottom: 1px solid #333333;
 }
